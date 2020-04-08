@@ -8,11 +8,17 @@
 
 轻量级OC对象本地缓存框架，无需手动继承<NSCoding>协议，也无需手动实现<NSCoding>协议里面的归档和解档方法
 
+归档方法
 ```
 + (void)archiverObject:(id)object toFile:(NSString *)filePath;
 
 ```
+解档方法
 
+```
++ (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath;
+                           
+```
 
 ## Requirements
 
@@ -25,10 +31,6 @@ it, simply add the following line to your Podfile:
 pod 'RGArchiver'
 ```
 
-## Author
+如果pod失败，请先使用 `pod repo update`更新本地pod缓存库
 
-18607304107@163.com, gui.ren@hand-china.com
 
-## License
-
-RGArchiver is available under the MIT license. See the LICENSE file for more info.
