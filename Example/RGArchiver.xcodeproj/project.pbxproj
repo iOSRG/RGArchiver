@@ -24,6 +24,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		922E2517A68C2C8B4A13BA0B /* Pods_RGArchiver_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919A57918076F9679F9F87BA /* Pods_RGArchiver_Example.framework */; };
 		C5FBE9623CF29AB72F679FCA /* Pods_RGArchiver_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BC605104F571436EF6B5 /* Pods_RGArchiver_Tests.framework */; };
+		F127D9D9243DA58B00C66F1F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F127D9D8243DA58B00C66F1F /* User.m */; };
+		F127D9DC243DA5B400C66F1F /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = F127D9DB243DA5B400C66F1F /* Room.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000A4408E3B5EB29950DB9AB /* RGArchiver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RGArchiver.podspec; path = ../RGArchiver.podspec; sourceTree = "<group>"; };
+		000A4408E3B5EB29950DB9AB /* RGArchiver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RGArchiver.podspec; path = ../RGArchiver.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* RGArchiver_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGArchiver_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,16 +59,20 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		64A0228683AA53FB1E6E15D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		64A0228683AA53FB1E6E15D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6736BC605104F571436EF6B5 /* Pods_RGArchiver_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGArchiver_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECE5DD9CFCFDAC2C0FDED15 /* Pods-RGArchiver_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGArchiver_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RGArchiver_Tests/Pods-RGArchiver_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7FD14388AC10550BD9DCB368 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7FD14388AC10550BD9DCB368 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		919A57918076F9679F9F87BA /* Pods_RGArchiver_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGArchiver_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4084893FBD5D08E65EC8561 /* Pods-RGArchiver_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGArchiver_Example.release.xcconfig"; path = "Target Support Files/Pods-RGArchiver_Example/Pods-RGArchiver_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DF1CDDCF6F839C40E72DFED1 /* Pods-RGArchiver_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGArchiver_Example.debug.xcconfig"; path = "Target Support Files/Pods-RGArchiver_Example/Pods-RGArchiver_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F01147D0D51C67E78549BB7F /* Pods-RGArchiver_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGArchiver_Tests.release.xcconfig"; path = "Target Support Files/Pods-RGArchiver_Tests/Pods-RGArchiver_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F127D9D7243DA58B00C66F1F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F127D9D8243DA58B00C66F1F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F127D9DA243DA5B400C66F1F /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		F127D9DB243DA5B400C66F1F /* Room.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,6 @@
 				6ECE5DD9CFCFDAC2C0FDED15 /* Pods-RGArchiver_Tests.debug.xcconfig */,
 				F01147D0D51C67E78549BB7F /* Pods-RGArchiver_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +154,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* RGViewController.h */,
 				6003F5A6195388D20070C39A /* RGViewController.m */,
+				F127D9D7243DA58B00C66F1F /* User.h */,
+				F127D9D8243DA58B00C66F1F /* User.m */,
+				F127D9DA243DA5B400C66F1F /* Room.h */,
+				F127D9DB243DA5B400C66F1F /* Room.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -258,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -364,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F127D9DC243DA5B400C66F1F /* Room.m in Sources */,
+				F127D9D9243DA58B00C66F1F /* User.m in Sources */,
 				6003F59E195388D20070C39A /* RGAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

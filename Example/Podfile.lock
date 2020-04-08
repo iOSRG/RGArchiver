@@ -1,0 +1,16 @@
+PODS:
+  - RGArchiver (0.1.0)
+
+DEPENDENCIES:
+  - RGArchiver (from `../`)
+
+EXTERNAL SOURCES:
+  RGArchiver:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RGArchiver: 9db60156bef8c3cb7d9a6f9e98d2aa90b90ec147
+
+PODFILE CHECKSUM: 047cd38e3ec73e5c1cdcf64e9b2ae3caedd42fcd
+
+COCOAPODS: 1.8.4

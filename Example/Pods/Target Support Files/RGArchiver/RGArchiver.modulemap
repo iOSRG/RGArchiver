@@ -1,0 +1,6 @@
+framework module RGArchiver {
+  umbrella header "RGArchiver-umbrella.h"
+
+  export *
+  module * { export * }
+}

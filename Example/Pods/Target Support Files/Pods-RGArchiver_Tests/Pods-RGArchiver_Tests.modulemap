@@ -1,0 +1,6 @@
+framework module Pods_RGArchiver_Tests {
+  umbrella header "Pods-RGArchiver_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
