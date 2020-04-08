@@ -11,16 +11,20 @@
 归档方法
 ```
 + (void)archiverObject:(id)object toFile:(NSString *)filePath;
-
 ```
 解档方法
 
 ```
-+ (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath;
-                           
++ (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath;     
 ```
 
-## Requirements
+如果对象中包含对象属性，只需将所包含的对象类进行参数传入即可
+```
++ (void)archiverObject:(id)object toFile:(NSString *)filePath propertyObjectClass:(NSArray <Class>*)propertyObjectClassArr;
+```
+```
++ (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath propertyObjectClass:(NSArray <Class>*)propertyObjectClassArr;
+```
 
 ## Installation
 
