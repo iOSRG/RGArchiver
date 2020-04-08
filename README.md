@@ -5,9 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/RGArchiver.svg?style=flat)](https://cocoapods.org/pods/RGArchiver)
 [![Platform](https://img.shields.io/cocoapods/p/RGArchiver.svg?style=flat)](https://cocoapods.org/pods/RGArchiver)
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+轻量级OC对象本地缓存框架，无需手动继承<NSCoding>协议，也无需手动实现<NSCoding>协议里面的归档和解档方法
+
+```
++ (void)archiverObject:(id)object toFile:(NSString *)filePath;
+
+```
+
 
 ## Requirements
 
