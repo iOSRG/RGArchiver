@@ -12,10 +12,21 @@
 ```
 + (void)archiverObject:(id)object toFile:(NSString *)filePath;
 ```
+
+```
+    User *user = [User new];
+    user.name = @"小明";
+    user.age = 17;
+    [RGArchiver archiverObject:user toFile:[self userPath]];
+```
+
 解档方法
 
 ```
 + (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath;     
+```
+```
+User *user = [RGArchiver unArchiverObjectOfObjectClass:[User class] fromFile:[self userPath]];
 ```
 
 如果对象中包含对象属性，只需将所包含的对象类进行参数传入即可
