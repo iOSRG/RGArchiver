@@ -13,20 +13,40 @@
 + (void)archiverObject:(id)object toFile:(NSString *)filePath;
 ```
 
-```
-    User *user = [User new];
-    user.name = @"小明";
-    user.age = 17;
-    [RGArchiver archiverObject:user toFile:[self userPath]];
-```
+
 
 解档方法
 
 ```
 + (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath;     
 ```
+
+##实例
 ```
-User *user = [RGArchiver unArchiverObjectOfObjectClass:[User class] fromFile:[self userPath]];
+- (IBAction)archiverUser:(id)sender {
+    
+    User *user = [User new];
+    user.name = @"小明";
+    user.age = 17;
+    [RGArchiver archiverObject:user toFile:[self userPath]];
+
+}
+
+- (IBAction)unarchiverUser:(id)sender {
+    
+    User *user = [RGArchiver unArchiverObjectOfObjectClass:[User class] fromFile:[self userPath]];
+    NSLog(@"age = %ld,name = %@",user.age,user.name);
+    
+}
+
+- (NSString *)userPath {
+    
+    NSString *path  = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"user.plist"];
+    NSLog(@"userPath = %@",path);
+    return path;
+}
+
+
 ```
 
 如果对象中包含对象属性，只需将所包含的对象类进行参数传入即可
