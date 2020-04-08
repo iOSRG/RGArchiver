@@ -21,7 +21,7 @@
 + (id)unArchiverObjectOfObjectClass:(Class)cls fromFile:(NSString *)filePath;     
 ```
 
-##实例
+##示例
 ```
 - (IBAction)archiverUser:(id)sender {
     
