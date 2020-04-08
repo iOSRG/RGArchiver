@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/RGArchiver.svg?style=flat)](https://cocoapods.org/pods/RGArchiver)
 
 
-轻量级OC对象本地缓存框架，无需手动继承<NSCoding>协议，也无需手动实现<NSCoding>协议里面的归档和解档方法
+轻量级OC对象本地缓存框架，无需手动继承`NSCoding`协议，也无需手动实现`NSCoding`协议里面的归档和解档方法
 
 归档方法
 ```
